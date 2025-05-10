@@ -3,10 +3,9 @@
 
 @section('content')
 
-<div style="margin-top: 50px">
-    <h1 style="font-weight: bold; text-transform: uppercase;text-align:center">Register</h1>
-    <div style="width: 40px; height: 3px; background-color: #4CAF50; margin: 8px auto 40px;"></div>
-</div>
+@section('title')
+    Register
+@endsection
 
 <h1>Buat Account Baru</h1>
 <h3>Sign Up Form</h3>

@@ -31,8 +31,16 @@
 
 <body class="index-page">
 
-    @include('layout.header')
-    @yield('content')
+    <main class="main">
+
+
+        @include('layout.header')
+         <h1 style="font-weight: bold; text-transform: uppercase;text-align:center">@yield('title')</h1>
+        <div style="width: 40px; height: 3px; background-color: #4CAF50; margin: 8px auto 40px;"></div>
+
+        @yield('content')
+
+    </main>
 
 
     <!-- Vendor JS Files -->
