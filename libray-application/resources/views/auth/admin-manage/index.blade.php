@@ -181,7 +181,7 @@
             });
 
 
-            $('body').on('click', '.delete-genre', function(e) {
+            $('body').on('click', '.delete-users', function(e) {
                 e.preventDefault();
                 var url = $(this).attr('href');
                 Swal.fire({

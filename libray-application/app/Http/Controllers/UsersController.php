@@ -44,7 +44,7 @@ class UsersController extends Controller
                          <a class="btn btn-sm btn-primary btn-icon edit-button-users" data-id="' . $id . '" href="#">
                             <i class="fa fa-pencil"></i>
                         </a>
-                        <a class="btn btn-sm btn-danger btn-icon delete-genre" data-id="' . $id . '" href="' . route('admin.users.destroy', $id) . '">
+                        <a class="btn btn-sm btn-danger btn-icon delete-users" data-id="' . $id . '" href="' . route('admin.users.destroy', $id) . '">
                             <i class="fa fa-trash"></i>
                         </a>
                     ';
@@ -86,7 +86,6 @@ class UsersController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|email|unique:users,email,' . $user->id,
             'role' => 'required|in:user,admin',
-            'password' => 'nullable|min:6',
         ]);
 
         $user->name = $validated['name'];
